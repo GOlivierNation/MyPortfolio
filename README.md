@@ -27,22 +27,13 @@
 
 👤 **Aime Malaika**
 
-- GitHub: [@aimemalaika](https://github.com/aimemalaika)
-- Twitter: [@Aime_malaika](https://twitter.com/Aime_Malaika)
-- LinkedIn: [aimemalaika](https://linkedin.com/in/aimemalaika)
+- GitHub: [@GOlivierNation](https://github.com/GOlivierNation)
+- Twitter: [@OGasominali](https://twitter.com/Golivier_Nation)
+- LinkedIn: [olivier gasominali](https://www.linkedin.com/in/olivier-gasominali-866962108/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-## 🤝 Contributors
-
-Thank you to
-
-- [Tekle Gebreyohannes(@gtekle)](https://github.com/gtekle)
-- [Akshitha Reddy(@AkshithaReddy1899)](https://github.com/AkshithaReddy1899)
-- [Tarikwa Tesfa(@tariktesfa)](https://github.com/tariktesfa)
-- [Islam Bahnas(@Banstein)](https://github.com/Banstein)
 
 ## Show your support
 
