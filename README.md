@@ -25,7 +25,7 @@
 
 ## Authors
 
-👤 **Aime Malaika**
+👤 **Olivier**
 
 - GitHub: [@GOlivierNation](https://github.com/GOlivierNation)
 - Twitter: [@OGasominali](https://twitter.com/Golivier_Nation)
