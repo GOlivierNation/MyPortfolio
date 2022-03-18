@@ -19,9 +19,9 @@
 
 ## Getting Started
 - clone the repository by running\
-    `git clone https://github.com/GOlivier/portofolio.git`
+    `https://github.com/GOlivierNation/portfoliomobo.git`
 - navigate to the folder\
-    `cd portofolio`
+    `cd portfoliomobo`
 
 ## Authors
 
