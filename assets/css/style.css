@@ -383,21 +383,17 @@ body {
   width: 70%;
   margin: -200% auto auto auto;
 }
-
 .modal-banner {
   border-radius: 8px;
 }
-
 .languages-left {
   justify-content: initial;
   margin-top: 0;
 }
-
 .modal-header {
   display: grid;
   grid-template-columns: 100%;
 }
-
 .modal-title {
   font-weight: 600;
   font-size: 32px;
@@ -406,7 +402,6 @@ body {
   margin-top: 12px;
   margin-bottom: 12px;
 }
-
 .achievement-modal p {
   font-weight: 400;
   font-size: 16px;
@@ -414,7 +409,6 @@ body {
   color: #344563;
   text-align: justify;
 }
-
 .modal-buttons {
   list-style-type: none;
   padding: 0;
@@ -423,33 +417,27 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 .modal-buttons.desktop-view {
   display: none;
 }
-
 .modal-buttons.mobile-view {
   display: flex;
 }
-
 .medium-size {
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
   padding: 8px 12px;
 }
-
 .success-button:hover {
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   animation: slide-left-right 0.5s;
   animation-fill-mode: forwards;
 }
-
 .success-button:active {
   background-color: #218838;
 }
-
 .modal-close {
   position: absolute;
   left: 75%;
@@ -459,25 +447,20 @@ body {
   padding: 1px 6px;
   border-radius: 50%;
 }
-
 .project-modal-up {
   animation: slide-up 1s ease forwards;
 }
-
 .project-modal-down {
   animation: slide-down 1s ease forwards;
 }
-
 @keyframes slide-up {
   0% {
     margin-top: 16px;
   }
-
   100% {
     margin-top: -200%;
   }
 }
-
 @keyframes slide-down {
   0% {
     margin-top: -200%;
@@ -487,12 +470,10 @@ body {
     margin-top: 16px;
   }
 }
-
 .project-button-wrapper {
   margin-bottom: 10px;
   margin-top: 25px;
 }
-
 .about-section p {
   font-weight: 400;
   font-size: 20px;
@@ -500,23 +481,19 @@ body {
   text-align: center;
   color: #42526e;
 }
-
 .button-wrapper-center {
   text-align: center;
   margin: 36px auto;
 }
-
 .about-tag-image {
   width: 70%;
   margin: 15%;
 }
-
 .about-my-knowleadge .card {
   background-color: #ebf0ee;
   text-align: center;
   width: 100%;
 }
-
 .about-my-knowleadge .image-card {
   width: 80px;
   height: 80px;
@@ -526,11 +503,9 @@ body {
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
   text-align: center;
 }
-
 .about-description ul li {
   background-color: #fff;
 }
-
 .about-me-second-text {
   font-weight: 700;
   text-align: center;
@@ -538,19 +513,15 @@ body {
   line-height: 52px;
   color: #172b4d;
 }
-
 .social-icons li:hover {
   animation: bounce 1.5s ease infinite;
 }
-
 .form-group textarea {
   height: 114px;
 }
-
 .form-control::placeholder {
   color: #6b778c;
 }
-
 .form-control {
   border-radius: 4px;
   border: 1px solid #d0d9d4;
@@ -560,29 +531,24 @@ body {
   color: #091e42;
   line-height: 1.5;
 }
-
 .error-msg {
   display: none;
   color: #ff6163;
   font-size: 12px;
   margin-top: 10px;
 }
-
 .form-control:focus ~ .error-msg {
   display: none;
 }
-
 .form-control:valid {
   border: 1px solid #218838;
 }
-
 .form-group {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .myemailaddress {
   font-weight: 400;
   font-size: 20px;
@@ -590,34 +556,28 @@ body {
   text-align: center;
   color: #42526e;
 }
-
 .contact-form {
   margin: 80px 0;
   display: flex;
   flex-direction: column;
 }
-
 .footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 .footer p {
   margin-top: 25px;
 }
-
 .about-top {
   background-image: url(../images/about-me-mobile.svg),
     url(../images/image-about-two.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom left, top right;
 }
-
 .menu-desktop {
   display: none;
 }
-
 .form-details {
   display: grid;
   grid-template-columns: 1fr;
