@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 
 # My Portofolio
 > this porject is my portofolio an ultimate way to showcase your work and let others reach out for me.\
@@ -11,6 +9,7 @@
 
 - HTML & CSS
 - Html & Css linters
+- Javascript
 
 ## Live Demo
 
