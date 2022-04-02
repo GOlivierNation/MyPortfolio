@@ -31,6 +31,15 @@ body {
 .logo,
 .toggle-menu {
   padding: 10px 12px;
+  animation: logo 9s;
+}
+
+@keyframes logo {
+  0% {
+    top: 0;
+    left: 130px;
+    color: red;
+  } 
 }
 
 .logo a {
