@@ -33,11 +33,11 @@ body {
   animation: logo 9s;
 }
 
-@keyframes logo {
+/* @keyframes logo {
    top: 0;
    left: 130px;
    color: red;
-  }
+  } */
   
 .logo a {
   font-weight: 600;
