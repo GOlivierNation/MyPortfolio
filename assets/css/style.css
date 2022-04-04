@@ -39,9 +39,8 @@ body {
     top: 0;
     left: 130px;
     color: red;
-  } 
-}
-
+  }
+  
 .logo a {
   font-weight: 600;
   font-size: 20px;
@@ -525,7 +524,7 @@ body {
   text-align: center;
   width: 100%;
 }
-
+  
 .about-my-knowleadge .image-card {
   width: 80px;
   height: 80px;
