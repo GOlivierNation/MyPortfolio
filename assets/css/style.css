@@ -516,9 +516,9 @@ body {
   background-color: #ebf0ee;
   text-align: center;
   width: 100%;
-}
-  
-.about-my-knowleadge .image-card {
+} 
+.about-my-knowleadge
+.image-card {
   width: 80px;
   height: 80px;
   margin: 40px auto;
