@@ -28,16 +28,15 @@ body {
   height: 45px;
 }
 
-.logo,
-.toggle-menu {
+.logo, .toggle-menu {
   padding: 10px 12px;
   animation: logo 9s;
 }
 
 @keyframes logo {
-    top: 0;
-    left: 130px;
-    color: red;
+   top: 0;
+   left: 130px;
+   color: red;
   }
   
 .logo a {
