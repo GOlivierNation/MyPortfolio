@@ -4,8 +4,8 @@ const header = document.querySelector('.toolbar');
 const navItemsDesktop = document.querySelectorAll('.nav-item-desktop');
 const navItemsMobile = document.querySelectorAll('.nav-item-mobile');
 const expandMenu = () => {
-  navigation.classList.remove('animate-left');
-  navigation.classList.add('animate-right');
+  navigation.classList.remove('animate-right');
+  navigation.classList.add('animate-left');
 };
 
 const closeMenu = () => {
