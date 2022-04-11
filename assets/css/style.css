@@ -137,12 +137,7 @@ body {
   height: 20px;
 }
 
-.open-menu {
-  background-color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-}
+==============
 
 .navigation a {
   font-weight: 600;
