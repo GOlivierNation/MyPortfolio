@@ -7,10 +7,7 @@ const expandMenu = () => {
   navigation.classList.add('animate-right');
 };
 
-const closeMenu = () => {
-  navigation.classList.remove('animate-right');
-  navigation.classList.add('animate-left');
-};
+========
 
 const setActive = (nav, target = null) => {
   nav.forEach((element) => {
