@@ -1,11 +1,10 @@
-// Mobile Menus
 const navigation = document.querySelector('.navigation');
 const header = document.querySelector('.toolbar');
 const navItemsDesktop = document.querySelectorAll('.nav-item-desktop');
 const navItemsMobile = document.querySelectorAll('.nav-item-mobile');
 const expandMenu = () => {
-  navigation.classList.remove('animate-right');
-  navigation.classList.add('animate-left');
+  navigation.classList.remove('animate-left');
+  navigation.classList.add('animate-right');
 };
 
 const closeMenu = () => {
@@ -60,11 +59,11 @@ document.addEventListener('scroll', () => {
       break;
   }
 });
-// Events Listeners
+
 document.querySelector('.open').addEventListener('click', expandMenu);
 const closeClass = document.querySelectorAll('.close');
 closeClass.forEach(((element) => element.addEventListener('click', closeMenu)));
-// Projects
+
 const projects = [
   {
     name: 'Multi-Post Stories Gain+Glory',
@@ -145,7 +144,6 @@ const projects = [
     document.querySelector('[name="message"]').value = data.messge;
   }
 })();
-// Popups
 
 const openPopup = (element) => {
   document.querySelector('#modal-title').textContent = projects[element.getAttribute('data-index')].name;
@@ -181,7 +179,6 @@ document.querySelector('#modal-close').addEventListener('click', () => {
 document.querySelectorAll('.opne-modal').forEach((element) => {
   element.addEventListener('click', () => openPopup(element));
 });
-// Validations
 
 const validateForm = (formItem) => {
   let isInvalid = 0;
@@ -224,7 +221,7 @@ const validateForm = (formItem) => {
 
   return isInvalid;
 };
-// contact form Query selectors
+
 document.querySelector('#contact-form').addEventListener('submit', (e) => {
   let invalid = 0;
   for (let i = 0; i < e.target.length; i += 1) {
