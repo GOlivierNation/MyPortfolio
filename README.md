@@ -13,7 +13,6 @@
 
 ## Live Demo
 
-### [VIEW WEB DEMO](https://goliviernation.github.io/portfoliomobo/)
 
 
 ## Getting Started
