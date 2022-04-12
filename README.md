@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-
+### [VIEW WEB DEMO](https://goliviernation.github.io/portfoliomobo/)
 
 ## Getting Started
 - clone the repository by running\
@@ -28,6 +28,8 @@
 - GitHub: [@GOlivierNation](https://github.com/GOlivierNation)
 - Twitter: [@OGasominali](https://twitter.com/Golivier_Nation)
 - LinkedIn: [olivier gasominali](https://www.linkedin.com/in/olivier-gasominali-866962108/)
+
+## Contributors
 
 - GitHub: [@Stanleeeeee](https://github.com/Stanleeeeee)
 - Twitter: [@Stanmega89](https://twitter.com/Stanmega89)
