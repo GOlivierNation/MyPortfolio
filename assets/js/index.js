@@ -120,7 +120,21 @@ const projects = [
     project.languages.forEach((lang) => {
       language += `<li>${lang}</li>`;
     });
-    ======
+    document.querySelector('#achievementlist').innerHTML += `
+    <li class="card">
+      <div class="project-image-card">
+        <img class="projectimages" src="assets/images/${project.image}" alt="${project.name}" />
+      </div>
+      <div class="project-description">
+        <h3>${project.name}</h3>
+        <ul class="languages">${language}</ul>
+        <div class="project-button-wrapper">
+          <button type="button" data-index="${index}" class="success-button opne-modal">See Project</button>
+        </div>
+      </div>
+    </li>
+    `;
+  });
   if (localStorage.getItem('userdata') !== null) {
     const data = JSON.parse(localStorage.getItem('userdata'));
     document.querySelector('[name="firstname"]').value = data.firstname;
