@@ -67,7 +67,7 @@ closeClass.forEach(((element) => element.addEventListener('click', closeMenu)));
 const projects = [
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Terminal'],
     image: '1.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -75,7 +75,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Terminal'],
     image: '2.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -83,7 +83,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Terminal'],
     image: '3.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -91,7 +91,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Terminal'],
     image: '4.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -99,7 +99,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Terminal'],
     image: '5.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -107,7 +107,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Terminal'],
     image: '6.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -144,7 +144,7 @@ const projects = [
     document.querySelector('[name="message"]').value = data.messge;
   }
 })();
-// Open Popup
+
 const openPopup = (element) => {
   document.querySelector('#modal-title').textContent = projects[element.getAttribute('data-index')].name;
   document.querySelector('#project-banner').setAttribute('src', `assets/images/${projects[element.getAttribute('data-index')].image}`);
