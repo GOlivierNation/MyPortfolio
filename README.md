@@ -30,6 +30,15 @@
 - Twitter: [@OGasominali](https://twitter.com/Golivier_Nation)
 - LinkedIn: [olivier gasominali](https://www.linkedin.com/in/olivier-gasominali-866962108/)
 
+- GitHub: [@Stanleeeeee](https://github.com/Stanleeeeee)
+- Twitter: [@Stanmega89](https://twitter.com/Stanmega89)
+- LinkedIn: [Ezeoke Stanley](https://www.linkedin.com/in/Ezeoke stanley/)
+
+- GitHub: [@odettefelix](https://github.com/odettefelix)
+- Twitter: [@odettefelix](https://twitter.com/)
+- LinkedIn: [Odette Felix](https://www.linkedin.com/in/odette-felix)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
