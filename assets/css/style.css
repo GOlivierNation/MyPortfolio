@@ -365,17 +365,7 @@ body {
   border-radius: 9px;
 }
 
-.achievement-modal {
-  position: fixed;
-  display: none;
-  background-color: #48484880;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: scroll;
-}
+===========
 
 .modal {
   background-color: #fff;
