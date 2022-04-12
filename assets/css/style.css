@@ -425,7 +425,13 @@ body {
   margin-bottom: 30px;
 }
 
-=======
+.modal-buttons.desktop-view {
+  display: none;
+}
+
+.modal-buttons.mobile-view {
+  display: flex;
+}
 
 .medium-size {
   font-weight: 400;
