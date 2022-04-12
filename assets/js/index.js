@@ -179,7 +179,7 @@ document.querySelector('#modal-close').addEventListener('click', () => {
 document.querySelectorAll('.opne-modal').forEach((element) => {
   element.addEventListener('click', () => openPopup(element));
 });
-
+// Form Validation
 const validateForm = (formItem) => {
   let isInvalid = 0;
   const regex = /\S+@\S+\.\S+/;
