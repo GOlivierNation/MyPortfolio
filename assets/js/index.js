@@ -64,7 +64,56 @@ document.querySelector('.open').addEventListener('click', expandMenu);
 const closeClass = document.querySelectorAll('.close');
 closeClass.forEach(((element) => element.addEventListener('click', closeMenu)));
 
-======
+const projects = [
+  {
+    name: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    image: '1.png',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
+    livelink: '#',
+    repository: '#',
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    image: '2.png',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
+    livelink: '#',
+    repository: '#',
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    image: '3.png',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
+    livelink: '#',
+    repository: '#',
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    image: '4.png',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
+    livelink: '#',
+    repository: '#',
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    image: '5.png',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
+    livelink: '#',
+    repository: '#',
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
+    image: '6.png',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
+    livelink: '#',
+    repository: '#',
+  },
+];
 (() => {
   projects.forEach((project, index) => {
     let language = '';
