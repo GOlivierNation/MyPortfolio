@@ -2,6 +2,8 @@ const navigation = document.querySelector('.navigation');
 const header = document.querySelector('.toolbar');
 const navItemsDesktop = document.querySelectorAll('.nav-item-desktop');
 const navItemsMobile = document.querySelectorAll('.nav-item-mobile');
+const popupcontainer = document.querySelector('.popcontainer');
+// console.log(popupcontainer);
 const expandMenu = () => {
   navigation.classList.remove('animate-left');
   navigation.classList.add('animate-right');
@@ -66,8 +68,9 @@ closeClass.forEach(((element) => element.addEventListener('click', closeMenu)));
 
 const projects = [
   {
+    id: 'popup1',
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript'],
     image: '1.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -75,7 +78,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript'],
     image: '2.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -83,7 +86,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript'],
     image: '3.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -91,7 +94,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript'],
     image: '4.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -99,7 +102,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript'],
     image: '5.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -107,7 +110,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Codekit', 'GitHub', 'JavaScript'],
     image: '6.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -129,7 +132,7 @@ const projects = [
         <h3>${project.name}</h3>
         <ul class="languages">${language}</ul>
         <div class="project-button-wrapper">
-          <button type="button" data-index="${index}" class="success-button opne-modal">See Project</button>
+          <button type="button" id="${index}" class="success-button opne-modal">See Project</button>
         </div>
       </div>
     </li>
@@ -144,22 +147,41 @@ const projects = [
     document.querySelector('[name="message"]').value = data.messge;
   }
 })();
+const buttons = document.querySelectorAll('.success-button');
+
+console.log(buttons[0]);
+
+projects.forEach((project, index) => {
+  // console.log(index);
+  buttons.forEach((button) => {
+    //  console.log(button.id);
+    button.addEventListener('click', () => {
+      if (index == button.id) {
+        // const popupCard = createPopup(project);
+        // popupContainer.appendChild(popupCard);
+        console.log('test');
+        console.log(button.id);
+      }
+    });
+  });
+});
 
 const openPopup = (element) => {
-  document.querySelector('#modal-title').textContent = projects[element.getAttribute('data-index')].name;
-  document.querySelector('#project-banner').setAttribute('src', `assets/images/${projects[element.getAttribute('data-index')].image}`);
+  // document.querySelector('#modal-title').textContent = projects[element.getAttribute('data-index')].name;
+  // document.querySelector('#project-banner').setAttribute('src', `assets/images/${projects[element.getAttribute('data-index')].image}`);
 
   let language = '';
-  projects[element.getAttribute('data-index')].languages.forEach((lang) => {
+  projects[element.getAttribute('id')].languages.forEach((lang) => {
     language += `<li>${lang}</li>`;
-  });
+  }
+  );
 
   document.querySelector('#laguages-modal').innerHTML = language;
 
-  document.querySelectorAll('.livelink').forEach((alink) => alink.setAttribute('href', projects[element.getAttribute('data-index')].livelink));
-  document.querySelectorAll('.repolink').forEach((alink) => alink.setAttribute('href', projects[element.getAttribute('data-index')].repository));
+  document.querySelectorAll('.livelink').forEach((alink) => alink.setAttribute('href', projects[element.getAttribute('id')].livelink));
+  document.querySelectorAll('.repolink').forEach((alink) => alink.setAttribute('href', projects[element.getAttribute('id')].repository));
 
-  document.querySelector('#descriptionmodal').textContent = projects[element.getAttribute('data-index')].description;
+  document.querySelector('#descriptionmodal').textContent = projects[element.getAttribute('id')].description;
 
   document.querySelector('#project-modal').style.display = 'block';
   setTimeout(() => {
