@@ -67,7 +67,7 @@ closeClass.forEach(((element) => element.addEventListener('click', closeMenu)));
 const projects = [
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
     image: '1.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -75,7 +75,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
     image: '2.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -83,7 +83,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
     image: '3.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -91,7 +91,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
     image: '4.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -99,7 +99,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
     image: '5.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -107,7 +107,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
-    languages: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    languages: ['Ruby on Rails', 'Css', 'JavaScript', 'html'],
     image: '6.png',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
     livelink: '#',
@@ -179,7 +179,49 @@ document.querySelector('#modal-close').addEventListener('click', () => {
 document.querySelectorAll('.opne-modal').forEach((element) => {
   element.addEventListener('click', () => openPopup(element));
 });
-// Form Validation
+
+const validateForm = (formItem) => {
+  let isInvalid = 0;
+  const regex = /\S+@\S+\.\S+/;
+  switch (true) {
+    case formItem.getAttribute('type') === 'email':
+      if (!regex.test(formItem.value)) {
+        formItem.nextElementSibling.innerHTML += 'The email is invalid <br>';
+        isInvalid += 1;
+      } else {
+        formItem.nextElementSibling.textContent.replace('The email is invalid <br>, ', '');
+      }
+      if (formItem.value !== formItem.value.toLowerCase()) {
+        formItem.nextElementSibling.innerHTML += 'The email shoud be in lowercase';
+        isInvalid += 1;
+      } else {
+        formItem.nextElementSibling.textContent.replace('The email shoud be in lowercase', '');
+      }
+      break;
+    case formItem.getAttribute('type') === 'text':
+      if (formItem.value.length > formItem.getAttribute('maxlength')) {
+        formItem.nextElementSibling.innerHTML += `The maximum number of character is ${formItem.getAttribute('maxlength')} <br>`;
+        isInvalid += 1;
+      } else {
+        formItem.nextElementSibling.textContent.replace(`The maximum number of character is ${formItem.getAttribute('maxlength')} <br>`, '');
+      }
+      if (formItem.value.length < formItem.getAttribute('minlength')) {
+        formItem.nextElementSibling.innerHTML += `The minimum number of character is ${formItem.getAttribute('minlength')}`;
+        isInvalid += 1;
+      } else {
+        formItem.nextElementSibling.textContent.replace(`The minimum number of character is ${formItem.getAttribute('maxlength')}`, '');
+      }
+      break;
+    default:
+      break;
+  }
+  if (isInvalid > 0) {
+    formItem.nextElementSibling.style.display = 'block';
+  }
+
+  return isInvalid;
+};
+
 document.querySelector('#contact-form').addEventListener('submit', (e) => {
   let invalid = 0;
   for (let i = 0; i < e.target.length; i += 1) {
