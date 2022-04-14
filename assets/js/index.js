@@ -180,8 +180,6 @@ document.querySelectorAll('.opne-modal').forEach((element) => {
   element.addEventListener('click', () => openPopup(element));
 });
 // Form Validation
-===================
-
 document.querySelector('#contact-form').addEventListener('submit', (e) => {
   let invalid = 0;
   for (let i = 0; i < e.target.length; i += 1) {
