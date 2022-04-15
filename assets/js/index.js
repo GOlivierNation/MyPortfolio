@@ -241,7 +241,7 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
   if (invalid > 0) {
     e.preventDefault();
   } else {
-    local.clear();
+    localStorage.clear();
     const userInfo = {
       firstname: document.querySelector('[name="firstname"]').value,
       lastname: document.querySelector('[name="lastname"]').value,
