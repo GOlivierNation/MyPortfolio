@@ -1,7 +1,7 @@
 
 # My Portofolio
 > this porject is my portofolio an ultimate way to showcase your work and let others reach out for me.\
-![screenshot](./assets/images/ScreenShot.png)\
+<!-- ![screenshot](./assets/images/ScreenShot.png)\ -->
 > It presents my professionalism and dedication to the craft better and more clearly than any CV.\
 
 
