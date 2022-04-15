@@ -555,10 +555,7 @@ article {
 }
 
 .about-section {
-  background: url("../images/illustration\ 2-about\ me\ mobile@2x.png") left 21%
-      no-repeat,
-    url("../images/illustration\ 1-\ about\ me-mobile@2x.png") right 2%
-      no-repeat;
+  background: url("../images/illustration\ 2-about\ me\ mobile@2x.png") left 21% no-repeat, url("../images/illustration\ 1-\ about\ me-mobile@2x.png") right 2% no-repeat;
   background-size: 13%;
   padding-bottom: 60px;
 }
