@@ -135,14 +135,7 @@ const projects = [
     </li>
     `;
   });
-  if (localStorage.getItem('userdata') !== null) {
-    const data = JSON.parse(localStorage.getItem('userdata'));
-    document.querySelector('[name="firstname"]').value = data.firstname;
-    document.querySelector('[name="lastname"]').value = data.lastname;
-    document.querySelector('[name="_replyto"]').value = data.email;
-    document.querySelector('[name="fullname"]').value = data.fullname;
-    document.querySelector('[name="message"]').value = data.messge;
-  }
+  =====
 })();
 
 const openPopup = (element) => {
