@@ -12,12 +12,13 @@ const projects = [
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 1 preview image',
     },
-    name: 'Multi-Post Stories Gain+Glory',
-    heading: 'Multi-Post Stories Gain+Glory',
+    name: 'Covid 19 Africa metric data',
+    heading: 'Covid 19 Africa metric data',
     languages: [
       'CSS',
       'JavaScript',
       'HTML',
+      'React',
     ],
     technologies: [
       'Codekit',
@@ -29,17 +30,17 @@ const projects = [
     ],
 
     // button: 'See Project',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo adipisci odio maxime, officia odit distinctio? Voluptas impedit dignissimos nemo sapiente facilis cupiditate! Facere dolorum, explicabo quo eligendi eaque non?',
+    description: 'a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux.',
     list: [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: '#',
+        liveDemo: 'https://metricdatacovid19.netlify.app/',
       },
       {
         text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: '#',
+        codeSource: 'https://github.com/GOlivierNation/ReactCapstoneProject',
       },
     ],
   },
